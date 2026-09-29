@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070007" />
+    <title>Heart QR</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="heart-qr-world">
+      <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+      <section class="qr-scene" aria-label="Heart QR code for music">
+        <svg class="heart-orbit heart-orbit-one" viewBox="0 0 320 290" aria-hidden="true">
+          <path d="M160 265C140 242 28 174 28 91C28 35 102 12 160 78C218 12 292 35 292 91C292 174 180 242 160 265Z" />
+        </svg>
+        <svg class="heart-orbit heart-orbit-two" viewBox="0 0 320 290" aria-hidden="true">
+          <path d="M160 265C140 242 28 174 28 91C28 35 102 12 160 78C218 12 292 35 292 91C292 174 180 242 160 265Z" />
+        </svg>
+
+        <div class="qr-aura"></div>
+        <div class="qr-card">
+          <div class="qr-inner">
+            <canvas id="qr-canvas" aria-label="Scannable music QR code"></canvas>
+            <div class="qr-heart-badge" aria-hidden="true">♥</div>
+          </div>
+        </div>
+
+        <div class="scan-line" aria-hidden="true"></div>
+        <div class="tiny-hearts" aria-hidden="true">
+          <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
